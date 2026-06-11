@@ -1,239 +1,316 @@
 <!DOCTYPE html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio & CV - Nguyễn Khánh Duy</title>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      integrity="sha512-Fo3rlrZj/k7ujTnHg4C+6/VRJcB2R31jEvC2EbO+XKVO/5M7Y1jYhkx4P92u7p4TRI7eG5E5tJ0zpZpCcl1f9g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <!-- Header & Navigation -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#hero">Trang chủ</a></li>
-          <li><a href="#about">Giới thiệu</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#projects">Dự án</a></li>
-          <li><a href="#services">Dịch vụ</a></li>
-          <li><a href="#testimonials">Đánh giá</a></li>
-          <li><a href="#contact">Liên hệ</a></li>
-        </ul>
-      </nav>
-    </header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khanh Duy - Full Stack Developer & Open Source Contributor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Khanh Duy</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <!-- <section id="hero">
+    <section id="home" class="hero">
         <div class="container">
-            <h1>Chào mừng đến với Portfolio của tôi</h1>
-            <p>Tôi là Nguyễn Khánh Duy - Design Frontend</p>
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Khanh Duy</span></h1>
+                <p class="hero-subtitle">Full Stack Developer | Open Source Enthusiast | Problem Solver</p>
+                <p class="hero-description">
+                    Passionate about building scalable applications and contributing to open source projects.
+                    I work with modern technologies like JavaScript, Python, C++, and more.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/khanhduy1407" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:your-email@example.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                        </div>
+                        <pre>&lt;Developer /&gt;</pre>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section> -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <div class="text">
-          <h2>Giới thiệu</h2>
-          <p>
-            Tôi là một nhà phát triển web đam mê công nghệ và thiết kế sáng tạo.
-            Với kinh nghiệm trong phát triển ứng dụng và thiết kế giao diện, tôi
-            cam kết mang đến những giải pháp tối ưu và đẹp mắt cho mọi dự án.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- CV Section (Thông tin cá nhân) -->
-    <section id="cv">
-      <div class="cv-container">
-        <h2>CV cá nhân của Nguyễn Khánh Duy</h2>
-        <div class="thongtin">
-          <img src="avatar.png" alt="Avatar của Nguyễn Khánh Duy" />
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate developer with expertise in building web applications, contributing to open-source projects,
+                        and solving complex algorithmic problems. With experience in multiple programming languages and frameworks,
+                        I love creating elegant solutions to challenging problems.
+                    </p>
+                    <p>
+                        My interests span from game development (Mole Engine) to deep learning (DeepSpeed), and I'm always eager
+                        to learn new technologies and best practices. I believe in writing clean, maintainable code and sharing
+                        knowledge with the developer community.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>30+</h3>
+                            <p>Public Repositories</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>LeetCode Problems Solved</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Programming Languages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="thongtin"><b>Tên:</b> <i>Nguyễn Khánh Duy</i></div>
-        <div class="thongtin"><b>Ngày sinh:</b> <i>2003</i></div>
-        <div class="thongtin"><b>Điện thoại:</b> <i>0123456789</i></div>
-      </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <h2>Dự án</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <img src="project1.jpg" alt="Dự án 1" />
-            <div class="card-content">
-              <h3>Dự án 1</h3>
-              <p>
-                Một mô tả ngắn gọn về dự án này. Sản phẩm mang tính sáng tạo và
-                giải pháp hiệu quả.
-              </p>
-              <a href="#">Xem chi tiết</a>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>LeetCode Solutions</h3>
+                    <p>Comprehensive collection of 3949+ LeetCode problems solved with Python and Modern C++.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Algorithms</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/LeetCode-Solutions" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-font"></i>
+                    </div>
+                    <h3>NKDuy Mono</h3>
+                    <p>Free and open-source monospace typeface designed specifically for developers.</p>
+                    <div class="project-tags">
+                        <span class="tag">Typography</span>
+                        <span class="tag">Open Source</span>
+                        <span class="tag">Design</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/NKDuyMono" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Mole Game Engine</h3>
+                    <p>Collection of game projects built with the Mole Game Engine including Minesweeper, Binary Game, and more.</p>
+                    <div class="project-tags">
+                        <span class="tag">Motoko</span>
+                        <span class="tag">Game Dev</span>
+                        <span class="tag">Engine</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/mole-minesweeper" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-react"></i>
+                    </div>
+                    <h3>React Social Media App</h3>
+                    <p>Full-featured social media application built with React and modern web technologies.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Full Stack</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/react-social-media-app" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>DeepSpeed</h3>
+                    <p>Deep learning optimization library for distributed training and inference.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/DeepSpeed" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-android"></i>
+                    </div>
+                    <h3>Android API Levels</h3>
+                    <p>Comprehensive microsite overview of Android versions, API levels, and market shares.</p>
+                    <div class="project-tags">
+                        <span class="tag">Android</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">Reference</span>
+                    </div>
+                    <a href="https://github.com/khanhduy1407/android-apilevels" target="_blank" class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="project-card">
-            <img src="project2.jpg" alt="Dự án 2" />
-            <div class="card-content">
-              <h3>Dự án 2</h3>
-              <p>
-                Một mô tả ngắn gọn về dự án này, thể hiện tinh thần đổi mới và
-                khả năng thực hiện vượt trội.
-              </p>
-              <a href="#">Xem chi tiết</a>
-            </div>
-          </div>
-          <div class="project-card">
-            <img src="project3.jpg" alt="Dự án 3" />
-            <div class="card-content">
-              <h3>Dự án 3</h3>
-              <p>
-                Một mô tả ngắn gọn về dự án này. Đây là một dự án quan trọng với
-                nhiều tính năng vượt trội.
-              </p>
-              <a href="#">Xem chi tiết</a>
-            </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
-      <div class="container">
-        <h2>Dịch vụ</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <i class="fas fa-code"></i>
-            <h3>Lập trình Web</h3>
-            <p>
-              Cung cấp các giải pháp phát triển website hiện đại với công nghệ
-              tiên tiến, tối ưu SEO và responsive.
-            </p>
-          </div>
-          <div class="service-card">
-            <i class="fas fa-paint-brush"></i>
-            <h3>Thiết kế UI/UX</h3>
-            <p>
-              Tạo ra giao diện trực quan, thân thiện và tối ưu trải nghiệm người
-              dùng trên mọi thiết bị.
-            </p>
-          </div>
-          <div class="service-card">
-            <i class="fas fa-mobile-alt"></i>
-            <h3>Phát triển ứng dụng</h3>
-            <p>
-              Phát triển ứng dụng web và di động với các giải pháp tích hợp mạnh
-              mẽ và hiệu quả.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">C++</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">Ruby</span>
+                        <span class="skill">C#</span>
+                        <span class="skill">Motoko</span>
+                        <span class="skill">HTML/CSS</span>
+                    </div>
+                </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-      <div class="container">
-        <h2>Đánh giá</h2>
-        <div class="testimonials-container">
-          <div class="testimonial">
-            <p>
-              "Sự chuyên nghiệp và sáng tạo của Nguyễn Khánh Duy đã mang lại
-              trải nghiệm tuyệt vời cho dự án của chúng tôi."
-            </p>
-            <span>Khách hàng A</span>
-          </div>
-          <div class="testimonial">
-            <p>
-              "Dịch vụ của anh ấy thực sự xuất sắc. Chúng tôi rất hài lòng với
-              kết quả mà anh ấy mang lại."
-            </p>
-            <span>Khách hàng B</span>
-          </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <span class="skill">React</span>
+                        <span class="skill">Vue.js</span>
+                        <span class="skill">Svelte</span>
+                        <span class="skill">Responsive Design</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">Modern JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Ruby on Rails</span>
+                        <span class="skill">REST APIs</span>
+                        <span class="skill">Database Design</span>
+                        <span class="skill">Authentication</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Other Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill">Git & GitHub</span>
+                        <span class="skill">Open Source</span>
+                        <span class="skill">Problem Solving</span>
+                        <span class="skill">Algorithms</span>
+                        <span class="skill">Game Development</span>
+                        <span class="skill">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2>Liên hệ</h2>
-        <div class="contact-form">
-          <form id="contactForm">
-            <input type="text" name="name" placeholder="Họ và tên" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Nội dung"
-              required
-            ></textarea>
-            <button type="submit">Gửi tin nhắn</button>
-          </form>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Feel free to reach out if you want to collaborate or just say hello!</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/khanhduy1407" target="_blank">@khanhduy1407</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:your-email@example.com">your-email@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-globe"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Vietnam</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
-    <!-- Back to Top Button -->
-    <div id="back-to-top"><i class="fas fa-chevron-up"></i></div>
-
     <!-- Footer -->
-    <footer>
-      <p>
-        &copy; 2025 Portfolio & CV của Nguyễn Khánh Duy. All rights reserved.
-      </p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Khanh Duy. All rights reserved.</p>
+            <p>Built with <span class="heart">❤️</span> using HTML, CSS & JavaScript</p>
+        </div>
     </footer>
 
-    <!-- JavaScript cho hiệu ứng cuộn mượt, nút Back to Top và xử lý form liên hệ -->
-    <script>
-      // Smooth scrolling cho các liên kết trong navigation
-      document.querySelectorAll("nav ul li a").forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
-          document
-            .querySelector(this.getAttribute("href"))
-            .scrollIntoView({ behavior: "smooth" });
-        });
-      });
-
-      // Hiển thị nút Back to Top khi cuộn trang
-      const backToTopButton = document.getElementById("back-to-top");
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          backToTopButton.style.display = "block";
-        } else {
-          backToTopButton.style.display = "none";
-        }
-      });
-      backToTopButton.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      });
-
-      // Xử lý gửi form liên hệ (demo)
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          alert(
-            "Cảm ơn bạn đã liên hệ, tin nhắn của bạn đã được gửi thành công!"
-          );
-          this.reset();
-        });
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
