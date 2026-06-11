@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my projects, skills, and experience as a Full Stack Developer and Open Source Contributor.
 
-## 🌟 Features
+## ✨ Features
 
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Dark/Light Theme**: Toggle between dark and light themes with preference persistence
